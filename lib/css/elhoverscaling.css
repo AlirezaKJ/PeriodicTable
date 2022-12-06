@@ -1,0 +1,21 @@
+#table .row7:hover {
+    transform: translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}
+#table .column1:hover {
+    transform: translateX(calc((var(--tableitemswidth) / 6)));
+}
+#table .column18:hover {
+    transform: translateX(calc((var(--tableitemswidth) / 6) - (2 * (var(--tableitemswidth) / 6))));
+}
+#table .item:nth-of-type(1):hover {
+    transform: translateX(calc((var(--tableitemswidth) / 6))) translateY(calc(var(--tableitemswidth) / 6));
+}
+#table .item:nth-of-type(18):hover {
+    transform: translateX(calc((var(--tableitemswidth) / 6) - (2 * (var(--tableitemswidth) / 6)))) translateY(calc(var(--tableitemswidth) / 6));
+}
+#table .item:nth-child(126):hover {
+    transform: translateX(calc((var(--tableitemswidth) / 6) - (2 * (var(--tableitemswidth) / 6)))) translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}
+#table .item:nth-child(109):hover {
+    transform: translateX(calc(var(--tableitemswidth) / 6)) translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}
