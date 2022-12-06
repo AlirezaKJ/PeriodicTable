@@ -86,6 +86,7 @@ main #table {
     align-items: top;
     align-content: flex-start;
     justify-content: left;
+    overflow: hidden;
     
     position: absolute;
     width: var(--tablewidth);
