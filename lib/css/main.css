@@ -187,7 +187,7 @@ main .bottombar {
 }
 main .bottombar > div {
     width: 20%;
-    height: 87.5%;
+    height: 90%;
 }
 main .bottombar .middlebar {
     text-align: center;
@@ -230,10 +230,12 @@ main .bottombar .infobar {
 main .bottombar .infobar .info {
     width: 100%;
     font-size: 1.5vw;
+    margin: 0.5vh 0;
+    overflow: hidden;
     text-align: center;
 }
 main .bottombar .membershipbar {
-    height: 12.5%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -244,4 +246,5 @@ main .bottombar .membershipbar span {
     font-size: 1.5vw;
     line-height: 50px;
     color: var(--semi);
+    overflow: hidden;
 }
