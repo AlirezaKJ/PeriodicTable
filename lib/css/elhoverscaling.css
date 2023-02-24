@@ -19,3 +19,24 @@
 #table .element:nth-child(109):hover {
     transform: translateX(calc(var(--tableitemswidth) / 6)) translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
 }
+#table .clicktglrow7 {
+    transform: translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}
+#table .clicktglcolumn1 {
+    transform: translateX(calc((var(--tableitemswidth) / 6)));
+}
+#table .clicktglcolumn18 {
+    transform: translateX(calc((var(--tableitemswidth) / 6) - (2 * (var(--tableitemswidth) / 6))));
+}
+#table .clicktgled:nth-of-type(1) {
+    transform: translateX(calc((var(--tableitemswidth) / 6))) translateY(calc(var(--tableitemswidth) / 6));
+}
+#table .clicktgled:nth-of-type(18) {
+    transform: translateX(calc((var(--tableitemswidth) / 6) - (2 * (var(--tableitemswidth) / 6)))) translateY(calc(var(--tableitemswidth) / 6));
+}
+#table .clicktgled:nth-child(126) {
+    transform: translateX(calc((var(--tableitemswidth) / 6) - (2 * (var(--tableitemswidth) / 6)))) translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}
+#table .clicktgled:nth-child(109) {
+    transform: translateX(calc(var(--tableitemswidth) / 6)) translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}

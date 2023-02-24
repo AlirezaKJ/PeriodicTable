@@ -7,7 +7,7 @@
     --main: #000;
     --semi: #fff;
     --alt: #333;
-    --tableclicktglborder: #333;
+    --tableclicktglborder: rgb(2,2,3);
 }
 
 * {
@@ -129,9 +129,6 @@ main #table .item {
     overflow: hidden;
     /* z-index: 1; */
 }
-#table .toggled {
-    background: red;
-}
 #table .element .elname {
     display: inline-block;
     position: relative;
@@ -149,7 +146,7 @@ main #table .item {
     position: relative;
     top: -15%;
     left: -45%;
-    z-index: 3;
+    z-index: 5;
     text-align: left;
     width: calc(var(--tableitemswidth) / 3);
     height: calc(var(--tableitemswidth) / 3);
@@ -161,15 +158,20 @@ main #table .item {
 #table .element:hover {
     scale: 1.5;
     box-shadow: 0px 0px 50px 3px rgba(255,255,255,0.2);
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
 }
 #table .clicktgled {
-    scale: 1.5;
-    box-shadow: 0px 0px 50px 3px rgba(255,255,255,0.2);
-    z-index: 2;
+    scale: 1.6 !important;
+    box-shadow: 0px 0px 20px 1px var(--tableclicktglborder) !important;
+    z-index: 4;
+    border-color: var(--tableclicktglborder) !important;
     cursor: pointer;
 }
+#table .clicktgled:hover {
+    box-shadow: 0px 0px 30px 5px var(--tableclicktglborder) !important;
+}
+
 main .rightbar {
     position: absolute;
     left: calc(var(--tableoffset) + var(--tablewidth));
@@ -255,4 +257,11 @@ main .bottombar .membershipbar span {
     line-height: 50px;
     color: var(--semi);
     overflow: hidden;
+}
+main .isotopesbar {
+    position: absolute;
+    top: calc(var(--tableoffset) + var(--tableheight) + 400px);
+    width: 100vw;
+    height: 500px;
+    background: red;
 }
