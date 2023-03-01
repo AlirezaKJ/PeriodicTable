@@ -1,0 +1,7 @@
+main .electronbar {
+    position: absolute;
+    top: calc(var(--tableoffset) + var(--tableheight) + 600px);
+    width: 100vw;
+    height: 500px;
+    background: red;
+}
