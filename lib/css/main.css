@@ -273,7 +273,7 @@ main .bottombar .membershipbar span {
 
 main footer {
     position: absolute;
-    top: calc(var(--tableoffset) + var(--tableheight) + 1300px);
+    top: calc(var(--tableoffset) + var(--tableheight) + 1500px);
     height: 200px;
     width: 100vw;
     font-weight: 100;

@@ -45,7 +45,7 @@ main .detailedelectroninfo {
     position: absolute;
     top: calc(var(--tableoffset) + var(--tableheight) + 900px);
     width: 100vw;
-    height: 400px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +56,9 @@ main .detailedelectroninfo {
 }
 
 main .detailedelectroninfo span {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    overflow: hidden;
+    width: 80%;
+    text-align: center;
     
 }
