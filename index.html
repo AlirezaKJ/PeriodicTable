@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="lib/css/elhoverscaling.css">
     <link rel="stylesheet" href="lib/css/electronbar.css">
     <script src="lib/js/datas.js"></script>
-    <title>Document</title>
+    <title>The Ptable</title>
 </head>
 <body>
     
@@ -36,8 +36,8 @@
             <div class="item">17</div>
             <div class="item">18</div>
         </div>
-        <div class="themebtn">
-            
+        <div class="themebtn" onclick="toggletheme()">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><rect fill="none" height="24" width="24"/><path d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg>
         </div>
         <div class="rowbar">
             <div class="item">1</div>
@@ -52,6 +52,149 @@
             
         </div>
         <div class="rightbar"></div>
+        <div class="electronbar">
+            <div class="electronshells">
+                <div class="elecshell" id="shellbar1">
+                    <div class="elecshellcircle">0</div>
+                    <div class="elecshellcircle">1</div>
+                    <div class="elecshellcircle">2</div>
+                </div>
+                <div class="elecshell" id="shellbar2">
+                    <div class="elecshellcircle">0</div>
+                    <div class="elecshellcircle">1</div>
+                    <div class="elecshellcircle">2</div>
+                    <div class="elecshellcircle">3</div>
+                    <div class="elecshellcircle">4</div>
+                    <div class="elecshellcircle">5</div>
+                    <div class="elecshellcircle">6</div>
+                    <div class="elecshellcircle">7</div>
+                    <div class="elecshellcircle">8</div>
+                </div>
+                <div class="elecshell" id="shellbar3">
+                    <div class="elecshellcircle">0</div>
+                    <div class="elecshellcircle">1</div>
+                    <div class="elecshellcircle">2</div>
+                    <div class="elecshellcircle">3</div>
+                    <div class="elecshellcircle">4</div>
+                    <div class="elecshellcircle">5</div>
+                    <div class="elecshellcircle">6</div>
+                    <div class="elecshellcircle">7</div>
+                    <div class="elecshellcircle">8</div>
+                    <div class="elecshellcircle">9</div>
+                    <div class="elecshellcircle">10</div>
+                    <div class="elecshellcircle">11</div>
+                    <div class="elecshellcircle">12</div>
+                    <div class="elecshellcircle">13</div>
+                    <div class="elecshellcircle">14</div>
+                    <div class="elecshellcircle">15</div>
+                    <div class="elecshellcircle">16</div>
+                    <div class="elecshellcircle">17</div>
+                    <div class="elecshellcircle">18</div>
+                </div>
+                <div class="elecshell" id="shellbar4">
+                    <div class="elecshellcircle">0</div>
+                    <div class="elecshellcircle">1</div>
+                    <div class="elecshellcircle">2</div>
+                    <div class="elecshellcircle">3</div>
+                    <div class="elecshellcircle">4</div>
+                    <div class="elecshellcircle">5</div>
+                    <div class="elecshellcircle">6</div>
+                    <div class="elecshellcircle">7</div>
+                    <div class="elecshellcircle">8</div>
+                    <div class="elecshellcircle">9</div>
+                    <div class="elecshellcircle">10</div>
+                    <div class="elecshellcircle">11</div>
+                    <div class="elecshellcircle">12</div>
+                    <div class="elecshellcircle">13</div>
+                    <div class="elecshellcircle">14</div>
+                    <div class="elecshellcircle">15</div>
+                    <div class="elecshellcircle">16</div>
+                    <div class="elecshellcircle">17</div>
+                    <div class="elecshellcircle">18</div>
+                    <div class="elecshellcircle">19</div>
+                    <div class="elecshellcircle">20</div>
+                    <div class="elecshellcircle">21</div>
+                    <div class="elecshellcircle">22</div>
+                    <div class="elecshellcircle">23</div>
+                    <div class="elecshellcircle">24</div>
+                    <div class="elecshellcircle">25</div>
+                    <div class="elecshellcircle">26</div>
+                    <div class="elecshellcircle">27</div>
+                    <div class="elecshellcircle">28</div>
+                    <div class="elecshellcircle">29</div>
+                    <div class="elecshellcircle">30</div>
+                    <div class="elecshellcircle">31</div>
+                    <div class="elecshellcircle">32</div>
+                </div>
+                <div class="elecshell" id="shellbar5">
+                    <div class="elecshellcircle">0</div>
+                    <div class="elecshellcircle">1</div>
+                    <div class="elecshellcircle">2</div>
+                    <div class="elecshellcircle">3</div>
+                    <div class="elecshellcircle">4</div>
+                    <div class="elecshellcircle">5</div>
+                    <div class="elecshellcircle">6</div>
+                    <div class="elecshellcircle">7</div>
+                    <div class="elecshellcircle">8</div>
+                    <div class="elecshellcircle">9</div>
+                    <div class="elecshellcircle">10</div>
+                    <div class="elecshellcircle">11</div>
+                    <div class="elecshellcircle">12</div>
+                    <div class="elecshellcircle">13</div>
+                    <div class="elecshellcircle">14</div>
+                    <div class="elecshellcircle">15</div>
+                    <div class="elecshellcircle">16</div>
+                    <div class="elecshellcircle">17</div>
+                    <div class="elecshellcircle">18</div>
+                    <div class="elecshellcircle">19</div>
+                    <div class="elecshellcircle">20</div>
+                    <div class="elecshellcircle">21</div>
+                    <div class="elecshellcircle">22</div>
+                    <div class="elecshellcircle">23</div>
+                    <div class="elecshellcircle">24</div>
+                    <div class="elecshellcircle">25</div>
+                    <div class="elecshellcircle">26</div>
+                    <div class="elecshellcircle">27</div>
+                    <div class="elecshellcircle">28</div>
+                    <div class="elecshellcircle">29</div>
+                    <div class="elecshellcircle">30</div>
+                    <div class="elecshellcircle">31</div>
+                    <div class="elecshellcircle">32</div>
+                </div>
+                <div class="elecshell" id="shellbar6">
+                    <div class="elecshellcircle">0</div>
+                    <div class="elecshellcircle">1</div>
+                    <div class="elecshellcircle">2</div>
+                    <div class="elecshellcircle">3</div>
+                    <div class="elecshellcircle">4</div>
+                    <div class="elecshellcircle">5</div>
+                    <div class="elecshellcircle">6</div>
+                    <div class="elecshellcircle">7</div>
+                    <div class="elecshellcircle">8</div>
+                    <div class="elecshellcircle">9</div>
+                    <div class="elecshellcircle">10</div>
+                    <div class="elecshellcircle">11</div>
+                    <div class="elecshellcircle">12</div>
+                    <div class="elecshellcircle">13</div>
+                    <div class="elecshellcircle">14</div>
+                    <div class="elecshellcircle">15</div>
+                    <div class="elecshellcircle">16</div>
+                    <div class="elecshellcircle">17</div>
+                    <div class="elecshellcircle">18</div>
+                </div>
+                <div class="elecshell" id="shellbar7">
+                    <div class="elecshellcircle">0</div>
+                    <div class="elecshellcircle">1</div>
+                    <div class="elecshellcircle">2</div>
+                    <div class="elecshellcircle">3</div>
+                    <div class="elecshellcircle">4</div>
+                    <div class="elecshellcircle">5</div>
+                    <div class="elecshellcircle">6</div>
+                    <div class="elecshellcircle">7</div>
+                    <div class="elecshellcircle">8</div>                    
+                </div>
+            </div>
+        </div>
         <div class="bottombar">
             <div class="membershipbar"></div>
             <div class="infobar">
@@ -105,9 +248,17 @@
             </div>
             
         </div>
-        <div class="electronbar">
-            
+
+        <div class="detailedelectroninfo">
+            <span style="font-size: 5vw;margin-bottom: 5vh;">Electron Configuration</span>
+            <span id="elecshellnumstr"></span>
+            <span id="elecshellconfigstr"></span>
+            <span id="elecshellstr"></span>
         </div>
+        <footer>
+            <a href="https://alirezakj.com/"><span>© AlirezaKJ | All Rights Reserved</span></a>
+            <a href="https://www.wolfram.com/mathematica/"><span>Database From Wolfram Mathematica</span></a>
+        </footer>
     </main>
 
 <script src="lib/js/main.js"></script>

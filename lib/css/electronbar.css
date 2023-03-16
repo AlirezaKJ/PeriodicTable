@@ -1,7 +1,61 @@
 main .electronbar {
     position: absolute;
-    top: calc(var(--tableoffset) + var(--tableheight) + 600px);
+    top: calc(var(--tableoffset) + var(--tableheight) + 0px);
     width: 100vw;
-    height: 500px;
-    background: red;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .electronbar .electronshells {
+    box-sizing: content-box;
+    width: 80vw;
+    height: calc(80vw / 8);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    overflow: hidden;
+    border: solid 0.3vw var(--semi);
+    border-radius: 30vw;
+
+}
+
+main .electronbar .electronshells .elecshell {
+    width: calc(80vw / 8);
+    height: calc((80vw / 8) * 33);
+    transition: all 1000ms;
+    /* border-left: solid 0.3vw var(--semi); */
+    /* border-right: solid 0.3vw var(--semi); */
+}
+
+main .electronbar .electronshells .elecshell .elecshellcircle {
+    width: calc(80vw / 11);
+    height: calc(80vw / 11);
+    border-radius: 80vw;
+    margin: calc(((80vw / 8) - (80vw / 11)) / 2) auto;
+    background: var(--alt);
+    color: var(--semi);
+    text-align: center;
+    line-height: calc(80vw / 11);
+    font-size: 3.5vw;
+}
+
+main .detailedelectroninfo {
+    position: absolute;
+    top: calc(var(--tableoffset) + var(--tableheight) + 900px);
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--semi);
+    font-weight: 200;
+    gap: 2vw;
+}
+
+main .detailedelectroninfo span {
+    font-size: 3vw;
+    
 }

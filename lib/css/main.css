@@ -24,6 +24,11 @@ body::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 main {
     display: inline-block;
     width: 100vw;
@@ -70,6 +75,7 @@ main .columnbar .item {
     color: var(--semi);
 }
 main .themebtn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +85,12 @@ main .themebtn {
     width: var(--tableoffset);
     height: var(--tableoffset);
     border: var(--border);
+}
+main .themebtn svg {
+    fill: var(--semi) !important;
+    width: calc(var(--tableoffset) / 1.5);
+    height: calc(var(--tableoffset) / 1.5);
+
 }
 main .rowbar {
     display: flex;
@@ -190,7 +202,7 @@ main .bottombar {
     position: absolute;
     background: var(--main);
     color: var(--semi);
-    top: calc(var(--tableoffset) + var(--tableheight));
+    top: calc(var(--tableoffset) + var(--tableheight) + 300px);
     height: 600px;
     width: 100vw;
 }
@@ -257,4 +269,19 @@ main .bottombar .membershipbar span {
     line-height: 50px;
     color: var(--semi);
     overflow: hidden;
+}
+
+main footer {
+    position: absolute;
+    top: calc(var(--tableoffset) + var(--tableheight) + 1300px);
+    height: 200px;
+    width: 100vw;
+    font-weight: 100;
+    font-size: 1.5vw;
+    color: var(--semi);
+    background: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
