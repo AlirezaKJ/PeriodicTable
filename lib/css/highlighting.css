@@ -1,0 +1,200 @@
+:root {
+    --periodandgrouptglcolor: var(--alt);
+    --metaltglcolor: #402C17;
+    --metalloidtglcolor: #015146;
+    --nonmetaltglcolor: #3A2151;
+    --gastglcolor: #ff5555;
+    --solidtglcolor: #aaa;
+    --liquidtglcolor: #9cd3db;
+    --diamagnetictglcolor: #DE000E;
+    --paramagnetictglcolor: #5b5867;
+    --ferromagnetictglcolor: #424242;
+    --antiferromagnetictglcolor: #b4b6b1;
+    --radioactivetglcolor: #80B425;
+    --stabletglcolor: #48433f;
+    --veryustabletglcolor: #800000;
+    --naturaltglcolor: #668D2E;
+    --synthetictglcolor: #98399c;
+    --sblocktglcolor: #339933;
+    --pblocktglcolor: #222299;
+    --dblocktglcolor: #aa4234;
+    --conductortglcolor: #337700;
+    --semiconductortglcolor: #333366;
+    --insulatortglcolor: #330000;
+}
+
+.columnbar .item:hover, .rowbar .item:hover {
+    background: var(--periodandgrouptglcolor);
+}
+
+#table .metaltgl {
+    background: var(--metaltglcolor) !important;
+    color: white !important;
+}
+#table .metalloidtgl {
+    background: var(--metalloidtglcolor) !important;
+    color: white !important;
+}
+#table .togglenonmetal {
+    background: var(--nonmetaltglcolor) !important;
+    color: white !important;
+}
+#table .togglegas {
+    background: var(--gastglcolor) !important;
+}
+#table .togglesolid {
+    background: var(--solidtglcolor) !important;
+}
+#table .toggleliquid {
+    background: var(--liquidtglcolor) !important;
+}
+#table .togglediamagnetic {
+    background: var(--diamagnetictglcolor) !important;
+    color: white !important;
+}
+#table .toggleparamagnetic {
+    background: var(--paramagnetictglcolor) !important;
+    color: white !important;
+}
+#table .toggleferromagnetic {
+    background: var(--ferromagnetictglcolor) !important;
+    color: white !important;
+}
+#table .toggleantiferromagnetic {
+    background: var(--antiferromagnetictglcolor) !important;
+    color: white !important;
+}
+#table .toggleradioactive {
+    background: var(--radioactivetglcolor) !important;
+    color: white !important;
+}
+#table .togglestable {
+    background: var(--stabletglcolor) !important;
+    color: white !important;
+}
+#table .toggleveryunstable {
+    background: var(--veryustabletglcolor) !important;
+    color: white !important;
+}
+#table .togglenatural {
+    background: var(--naturaltglcolor) !important;
+}
+#table .togglesynthetic {
+    background: var(--synthetictglcolor) !important;
+}
+#table .togglesblock {
+    background: var(--sblocktglcolor) !important;
+    color: white !important;
+}
+#table .togglepblock {
+    background: var(--pblocktglcolor) !important;
+    color: white !important;
+}
+#table .toggledblock {
+    background: var(--dblocktglcolor) !important;
+    color: white !important;
+}
+#table .toggleconductor {
+    background: var(--conductortglcolor) !important;
+    color: white !important;
+}
+#table .togglesemiconductor {
+    background: var(--semiconductortglcolor) !important;
+    color: white !important;
+}
+#table .toggleinsulator {
+    background: var(--insulatortglcolor) !important;
+    color: white !important;
+
+}
+#table .periodandgrouptgl {
+    background: var(--periodandgrouptglcolor) !important;
+}
+
+.rightbar .col2 .row section .togglegas {
+    background: var(--gastglcolor) !important;
+}
+
+.rightbar .col2 .row section .togglesolid {
+    background: var(--solidtglcolor) !important;
+}
+
+.rightbar .col2 .row section .toggleliquid {
+    background: var(--liquidtglcolor) !important;
+}
+
+.rightbar .col2 .row section .togglemetal {
+    background: var(--metaltglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .togglemetalloid {
+    background: var(--metalloidtglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .togglenonmetal {
+    background: var(--nonmetaltglcolor) !important;
+    color: white !important;
+}
+
+.rightbar .col2 .row section .togglediamagnetic {
+    background: var(--diamagnetictglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .toggleparamagnetic {
+    background: var(--paramagnetictglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .toggleferromagnetic {
+    background: var(--ferromagnetictglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .toggleantiferromagnetic {
+    background: var(--antiferromagnetictglcolor) !important;
+    color: white !important;
+}
+
+.rightbar .col2 .row section .toggleradioactive {
+    background: var(--radioactivetglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .togglestable {
+    background: var(--stabletglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .toggleveryunstable {
+    background: var(--veryustabletglcolor) !important;
+    color: white !important;
+}
+
+.rightbar .col2 .row section .togglenatural {
+    background: var(--naturaltglcolor) !important;
+}
+.rightbar .col2 .row section .togglesynthetic {
+    background: var(--synthetictglcolor) !important;
+}
+
+.rightbar .col2 .row section .togglesblock {
+    background: var(--sblocktglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .togglepblock {
+    background: var(--pblocktglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .toggledblock {
+    background: var(--dblocktglcolor) !important;
+    color: white !important;
+}
+
+.rightbar .col2 .row section .toggleconductor {
+    background: var(--conductortglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .togglesemiconductor {
+    background: var(--semiconductortglcolor) !important;
+    color: white !important;
+}
+.rightbar .col2 .row section .toggleinsulator {
+    background: var(--insulatortglcolor) !important;
+    color: white !important;
+}

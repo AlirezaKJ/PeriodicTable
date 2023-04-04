@@ -8,6 +8,7 @@
     --semi: #fff;
     --alt: #333;
     --tableclicktglborder: rgb(2,2,3);
+    --rightbartransbg: rgba(255,255,255,0.5);
 }
 
 * {
@@ -64,6 +65,8 @@ main .columnbar {
     height: var(--tableoffset);
 }
 main .columnbar .item {
+    cursor: pointer;
+    transition: all 300ms;
     display: flex;
     font-size: 1.2vw;
     align-items: center;
@@ -104,6 +107,8 @@ main .rowbar {
     height: var(--tableheight);
 }
 main .rowbar .item {
+    cursor: pointer;
+    transition: all 300ms;
     display: flex;
     font-size: 1.2vw;
     border: var(--border);
@@ -153,6 +158,22 @@ main #table .item {
     line-height: calc(var(--tableitemswidth) / 2);
     font-size: calc(var(--tableitemswidth) / 3);
 }
+
+#table .fblockopener {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+#table .fblockopener .fblockopenername {
+    z-index: 2;
+    text-align: center;
+    width: calc(var(--tableitemswidth ) / 1.2);
+    height: calc(var(--tableitemswidth ) / 1.2);
+    line-height: calc(var(--tableitemswidth) / 1.2);
+    font-size: calc(var(--tableitemswidth) / 4.5);
+    overflow: hidden;
+}
 #table .element .elatomicnum {
     display: inline-block;
     position: relative;
@@ -192,7 +213,199 @@ main .rightbar {
     width: 50vw;
     background: var(--main);
     border: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 750ms 500ms,top 500ms,height 500ms,border 300ms 1000ms,background 300ms 1500ms;
 }
+
+main .rightbar:hover {
+    transition: left 750ms,top 500ms 500ms,height 500ms 500ms,border 300ms 1500ms,background 300ms 2000ms;
+    left: 50vw;
+    top: 0;
+    height: calc(var(--tableheight) + var(--tableoffset));
+    border: solid 1px var(--semi);
+    background: var(--rightbartransbg);
+}
+
+main .rightbartoggled {
+    left: 50vw;
+}
+
+main .rightbar .col1 {
+    width: var(--tableoffset);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .rightbar .col1 .togglingbutton {
+    width: 100%;
+    height: calc(100% / 7);
+    font-size: 1.8vh;
+    background: rgba(0,0,0,0.0);
+    color: var(--semi);
+    writing-mode: vertical-rl;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    line-height: var(--tableoffset);
+    transition: all 300ms;
+}
+
+main .rightbar .col1 .togglingbutton:hover {
+    background: var(--alt);
+}
+
+
+main .rightbar .col2 {
+    width: calc(50vw - var(--tableoffset));
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .rightbar .col2 .row {
+    height: calc(100% / 7);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--semi);
+    font-size: 1.5vw;
+}
+
+main .rightbar .col2 .row section {
+    width: 90%;
+    margin-left: 2vw;
+    height: 100%;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main .rightbar .col2 .row section .togglebutton {
+    text-align: center;
+    line-height: calc(5vh - 2px);
+    width: 9.5vw;
+    height: 5vh;
+    border-radius: 2vw;
+    background: var(--alt);
+    font-size: 1vw;
+    overflow: hidden;
+    border: solid 2px rgba(0,0,0,0.0);
+    transition: all 300ms;
+    cursor: pointer;
+}
+main .rightbar .col2 .row section .togglebutton:hover {
+    border: solid 2px var(--semi);
+}
+
+main #fblock {
+    position: absolute;
+    top: calc(var(--tableoffset));
+    left: calc(var(--tableoffset));
+    width: var(--tablewidth);
+    height: var(--tableheight);
+    background: var(--rightbartransbg);
+    visibility: visible;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 300ms;
+}
+main .hidefblock {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+main #fblock #ftable {
+    position: absolute;
+    top: calc(var(--tableitemswidth) * 2.5);
+    left: calc(var(--tableitemswidth) * 1.5);
+    width: calc(var(--tableitemswidth) * 15);
+    height: calc(var(--tableitemswidth) * 2);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    align-content: flex-start;
+    justify-content: left;
+    overflow: hidden;
+}
+main #fblock #ftable .fitem {
+    display: inline-block;
+    width: var(--tableitemswidth);
+    height: var(--tableitemswidth);
+    background: var(--main);
+    color: var(--semi);
+    border: var(--border);
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+#fblock #ftable .fitem:hover {
+    scale: 1.5;
+    box-shadow: 0px 0px 50px 3px rgba(255,255,255,0.2);
+    z-index: 3;
+    cursor: pointer;
+}
+
+main #fblock #ftable .fitem .elname {
+    display: inline-block;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    z-index: 2;
+    text-align: center;
+    width: calc(var(--tableitemswidth ) / 2);
+    height: calc(var(--tableitemswidth ) / 2);
+    line-height: calc(var(--tableitemswidth) / 2);
+    font-size: calc(var(--tableitemswidth) / 3);
+}
+main #fblock #ftable .fitem .elatomicnum {
+    display: inline-block;
+    position: relative;
+    top: -15%;
+    left: -45%;
+    z-index: 5;
+    text-align: left;
+    width: calc(var(--tableitemswidth) / 3);
+    height: calc(var(--tableitemswidth) / 3);
+    line-height: calc(var(--tableitemswidth) / 3);
+    font-size: calc(var(--tableitemswidth) / 5) ;
+    overflow: hidden;
+}
+main #fblock #ftable .clicktgled {
+    scale: 1.6 !important;
+    box-shadow: 0px 0px 20px 1px var(--tableclicktglborder) !important;
+    z-index: 4;
+    border-color: var(--tableclicktglborder) !important;
+    cursor: pointer;
+}
+main #fblock #ftable .clicktgled:hover {
+    box-shadow: 0px 0px 30px 5px var(--tableclicktglborder) !important;
+}
+
+main #fblock #closebtn {
+    position: absolute;
+    top: calc(var(--tableitemswidth) / 2);
+    right: calc(var(--tableitemswidth) / 2);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 2;
+}
+main #fblock #closebtn svg {
+    fill: var(--semi);
+    cursor: pointer;
+}
+
 
 main .bottombar {
     display: flex;
@@ -202,7 +415,7 @@ main .bottombar {
     position: absolute;
     background: var(--main);
     color: var(--semi);
-    top: calc(var(--tableoffset) + var(--tableheight) + 300px);
+    top: calc(var(--tableoffset) + var(--tableheight));
     height: 600px;
     width: 100vw;
 }
@@ -284,4 +497,8 @@ main footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+main footer * {
+    overflow: hidden;
 }

@@ -40,3 +40,26 @@
 #table .clicktgled:nth-child(109) {
     transform: translateX(calc(var(--tableitemswidth) / 6)) translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
 }
+
+
+#ftable .Period6:hover {
+    transform: translateY(calc((var(--tableitemswidth) / 6)));
+}
+#ftable .Period7:hover {
+    transform: translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}
+
+#ftable .fitem:nth-child(1):hover {
+    transform: translateX(calc((var(--tableitemswidth) / 6))) translateY(calc(var(--tableitemswidth) / 6)) !important;
+}
+#ftable .fitem:nth-child(15):hover {
+    transform: translateX(calc((var(--tableitemswidth) / 6) - (2 * (var(--tableitemswidth) / 6)))) translateY(calc(var(--tableitemswidth) / 6));
+}
+#ftable .fitem:nth-child(16):hover {
+    transform: translateX(calc(var(--tableitemswidth) / 6)) translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}
+#ftable .fitem:nth-child(30):hover {
+    transform: translateX(calc((var(--tableitemswidth) / 6) - (2 * (var(--tableitemswidth) / 6)))) translateY(calc((var(--tableitemswidth) / 6) - (var(--tableitemswidth) / 6) * 2));
+}
+
+/* TODO: FIX TOGGLED ELEMENTS IN FBLOCK POSITION WHEN NOT HOVERED */

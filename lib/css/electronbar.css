@@ -1,6 +1,6 @@
 main .electronbar {
     position: absolute;
-    top: calc(var(--tableoffset) + var(--tableheight) + 0px);
+    top: calc(var(--tableoffset) + var(--tableheight) + 1200px);
     width: 100vw;
     height: 300px;
     display: flex;
@@ -43,7 +43,7 @@ main .electronbar .electronshells .elecshell .elecshellcircle {
 
 main .detailedelectroninfo {
     position: absolute;
-    top: calc(var(--tableoffset) + var(--tableheight) + 900px);
+    top: calc(var(--tableoffset) + var(--tableheight) + 600px);
     width: 100vw;
     height: 600px;
     display: flex;
