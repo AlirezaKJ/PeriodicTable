@@ -1,6 +1,10 @@
-# theptable.com
-This is the official repository for the web page https://theptable.com/
-
-if you have any ideas to improve this project just send a pull request and kaboom!
+# ThePtable.com
 
 ![image](https://user-images.githubusercontent.com/67480810/226332942-5d620b27-e482-460f-b9f4-581587e21a98.png)
+
+This web project is active at https://theptable.com/
+
+## Features
+* toggling diffrent elements by their memberships
+* general element datas including abundances, boiling point etc ...
+* electron configuration of each element
