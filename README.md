@@ -1,4 +1,4 @@
-# ThePtable.com
+# PeridiocTable
 
 ![image](https://user-images.githubusercontent.com/67480810/226332942-5d620b27-e482-460f-b9f4-581587e21a98.png)
 
