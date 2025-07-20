@@ -1,7 +1,10 @@
 <script lang="ts">
-	import '../app.css';
+	import '$lib/main.css';
 	
-	let { children } = $props();
 </script>
 
-{@render children()}
+<nav></nav>
+
+<slot />
+
+<footer></footer>
