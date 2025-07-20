@@ -5,6 +5,10 @@
 
 <nav></nav>
 
+<svelte:head>
+	<title>Periodic Table</title>
+</svelte:head>
+
 <slot />
 
 <footer></footer>
